@@ -20,6 +20,7 @@ public class CollisonManger : MonoBehaviour
         {
             TimerUp.timerActive = false;
             menu.SetActive(true);
+            
         }
     }
     private void OnTriggerStay(Collider other)

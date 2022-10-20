@@ -7,6 +7,9 @@ public class TimerUp : MonoBehaviour
 {
     public float timeStart;
     public Text textBox;
+    public GameObject menu;
+    public Transform Head;
+    public float spawnDistance = 1;
 
     public static bool timerActive = false;
     void Start()
@@ -19,7 +22,10 @@ public class TimerUp : MonoBehaviour
         {
             timeStart += Time.deltaTime;
             textBox.text = timeStart.ToString("F2");
+            menu.transform.position = Head.position + new Vector3(Head.forward.x, 0, Head.forward.z).normalized * spawnDistance;
         }
+        menu.transform.LookAt(new Vector3(Head.position.x, menu.transform.position.y, Head.position.z));
+        menu.transform.forward *= -1;
     }
     public void TimerButton()
     {
