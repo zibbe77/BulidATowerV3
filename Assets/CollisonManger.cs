@@ -18,9 +18,9 @@ public class CollisonManger : MonoBehaviour
     {
         if (goal == true && cube == true)
         {
+            TimerUp.won = true;
             TimerUp.timerActive = false;
             menu.SetActive(true);
-            
         }
     }
     private void OnTriggerStay(Collider other)
