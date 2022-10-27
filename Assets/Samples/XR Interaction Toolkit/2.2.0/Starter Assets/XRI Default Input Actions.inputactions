@@ -381,7 +381,7 @@
                 {
                     "name": "",
                     "id": "33e393ee-9155-4446-872c-7fe9473757dd",
-                    "path": "<XRController>{LeftHand}/menuButton",
+                    "path": "<OculusTouchController>{LeftHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
