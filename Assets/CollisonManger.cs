@@ -8,6 +8,10 @@ public class CollisonManger : MonoBehaviour
     bool goal = false;
     bool cube = false;
     public GameObject menu;
+
+    float timeSet = 3;
+    float timeDown = 3;
+
     void Start()
     {
 
@@ -18,9 +22,20 @@ public class CollisonManger : MonoBehaviour
     {
         if (goal == true && cube == true)
         {
-            TimerUp.won = true;
-            TimerUp.timerActive = false;
-            menu.SetActive(true);
+            if (timeDown < 0)
+            {
+                TimerUp.won = true;
+                TimerUp.timerActive = false;
+                menu.SetActive(true);
+            }
+            else
+            {
+                timeDown -= Time.deltaTime;
+            }
+        }
+        else
+        {
+            timeDown = timeSet;
         }
     }
     private void OnTriggerStay(Collider other)

@@ -19,11 +19,11 @@ public class SceneSwitch : MonoBehaviour
         }
         if (myDrop.value == 2)
         {
-            print("yes2");
+            SceneManager.LoadScene(2);
         }
         if (myDrop.value == 3)
         {
-            print("yes3");
+            SceneManager.LoadScene(3);
         }
 
     }
