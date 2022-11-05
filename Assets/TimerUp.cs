@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class TimerUp : MonoBehaviour
 {
-    public float timeStart;
+    public static float timeStart;
     public Text textBox;
     public GameObject menu;
     public Transform Head;
     public float spawnDistance = 1;
-
     public static bool timerActive = false;
     public static bool won = false;
     void Start()
