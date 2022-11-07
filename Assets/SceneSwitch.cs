@@ -25,6 +25,10 @@ public class SceneSwitch : MonoBehaviour
         {
             SceneManager.LoadScene(3);
         }
+        if (myDrop.value == 4)
+        {
+            SceneManager.LoadScene(4);
+        }
 
     }
 }

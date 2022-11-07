@@ -9,8 +9,8 @@ public class CollisonManger : MonoBehaviour
     bool cube = false;
     public GameObject menu;
 
-    float timeSet = 3;
-    float timeDown = 3;
+    float timeSet = 4;
+    float timeDown = 4;
 
     void Start()
     {
